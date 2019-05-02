@@ -76,7 +76,7 @@ root
  |-- subreddit_type: string (nullable = true)     
 ```
 
-####There are in total 476259744 entries of data.    
+#### There are in total 476259744 entries of data.    
 
 ## Code
 All the code are in the Mini Project.ipynb file.
