@@ -189,7 +189,7 @@ From the result, we can conclude: there are topics including jeweler-ring: which
 I calculate the correlation between socre and sentiment score:  0.06128591083584731.   
 The result indicate there are no correlation between sentiment score we generated from the body text and the score. Which could also explain why the predictive model does not have a satisfy result for prediction.      
 
-### Result Section:    
+## Result Section:    
     
 1.**Predictive Modeling:** the predictive accuracy is 0.6803125591954718, and from the roc curve, the result is not satisfying. There are several potential reasons that account for the high error rate. For example: the data set is not large enough, the feature used in nor correlated, the model should include more features in the model, logistic regression is not a good model to fit the data.        
         
@@ -199,7 +199,7 @@ The result indicate there are no correlation between sentiment score we generate
         
 4.**Word Count Plot:** from the matrix, like, ring, gold, stone, jewelry price diamonds are all words that occurs most frequently. This confirms our subreddit group and also gives us a sense of what kind of topic are most concerned by users.            
         
-### Future Work:     
+## Future Work:     
 1. Improve the accuracy of the predictive model: to include more features, use other predictive models.    
 2. Do topic modeling for more clusters and return more topic words.   
 3. Do the analysis for different subreddit group
