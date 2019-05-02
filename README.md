@@ -84,7 +84,8 @@ All the code are in the Mini Project.ipynb file.
 ## Methods section:
 Subset of the data: jewelry subreddit subset.     
      
-**Tools used for analyzing:     ** 
+**Tools used for analyzing:**      
+        
 1. **Explore Analysis:**, boxplot, calculate the math statistics and create summary table.       
 2. **Sentiment Analysis:**, calcualte the sentiment score (range from -1 to 1 for which -1 means most negative and 1 means most positive)     
 3. **Natural Language Processing:** word count. Count the occurency of each word, plot the distribution of the mostly used words.     
