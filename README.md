@@ -156,6 +156,8 @@ From the matrix, like, ring, gold, stone, jewelry price diamonds are all words t
           
 ### Modele the dataset    
 1.**Predictive Modeling:** I utilize logistic regression model to predict the score using sentiment score, no_follow, send_replies and stickied.       
+         
+          
 **Logistic regression**: is the appropriate regression analysis to conduct when the dependent variable is dichotomous (binary).  Like all regression analyses, the logistic regression is a predictive analysis.  Logistic regression is used to describe data and to explain the relationship between one dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.     
 The model include:   
  |-- body: string (nullable = true)
@@ -168,7 +170,7 @@ The model include:
 The predictive accuracy is 0.6803125591954718, and from the roc curve, the result is not satisfying. There are several potential reasons that account for the high error rate. For example: the data set is not large enough, the feature used in nor correlated, the model should include more features in the model, logistic regression is not a good model to fit the data.     
      
           
-2.**Topic Modeling:**is a type of statistical modeling for discovering the abstract “topics” that occur in a collection of documents. Latent Dirichlet Allocation (LDA) is an example of topic model and is used to classify text in a document to a particular topic. It builds a topic per document model and words per topic model, modeled as Dirichlet distributions.In my model, I set the cluster size to be 3 and the number of word topic returen to be 5.     
+2.**Topic Modeling:** is a type of statistical modeling for discovering the abstract “topics” that occur in a collection of documents. Latent Dirichlet Allocation (LDA) is an example of topic model and is used to classify text in a document to a particular topic. It builds a topic per document model and words per topic model, modeled as Dirichlet distributions.In my model, I set the cluster size to be 3 and the number of word topic returen to be 5.     
 The result retured from the topic model:    
 topic:  0
 ['would', 'like', 'ring', 'jeweler', 'going']
@@ -182,11 +184,11 @@ topic:  2
 From the result, we can conclude: there are topics including jeweler-ring: which may discuss the ring in general, ring-silver-gold: which may discuss whether to buy silver ring or gold ring, stone-stones: which may discuss the jeweler with stone. In general the topice modeling did a great job in greate different cluster for the text.     
 
 
-###Correaltion analysis:
+### Correaltion analysis:
 I calculate the correlation between socre and sentiment score:  0.06128591083584731.   
 The result indicate there are no correlation between sentiment score we generated from the body text and the score. Which could also explain why the predictive model does not have a satisfy result for prediction.      
 
-###Futher Work:     
+### Future Work:     
 1. Improve the accuracy of the predictive model: to include more features, use other predictive models.    
 2. Do topic modeling for more clusters and return more topic words.   
 3. Do the analysis for different subreddit group
